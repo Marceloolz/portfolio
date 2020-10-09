@@ -1,0 +1,121 @@
+.SiteHome{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/bg-geral.png);
+    background-size: cover;
+    background-position: 0 0px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    .SiteHome_Container{
+            width: 90%;
+            max-width: 1200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        .SiteHome_Container_FotoPerfil{
+            max-width: calc(250px - 16px);
+            margin-bottom: 72px;
+            img{
+                width: calc(100% - 16px);
+                border-radius: 1000px;
+                background-image: linear-gradient(45deg,#753281,#ffcecf);
+                padding: 8px;
+                animation: animaBgPerfil 2s infinite;
+                box-shadow: 0px 6px 20px #fda4c1;
+            }
+        }
+        .SiteHome_Container_Texto{
+            text-align: center;
+            position: absolute;
+            bottom: 156px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .Container_Texto_Nome{
+                color: $Branco;
+                font-size: 48px;
+                line-height: 56px;
+                font-weight: 700;
+            }
+            .Container_Texto_Cargo{
+                color: $Branco;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 200;
+            }
+            .Container_Texto_Button{
+                button{
+                    background-color: #fff;
+                    border: 2px solid #fff0;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-top: 24px;
+                    color: #72326c;
+                    padding: 16px 40px;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    outline: none;
+                    @extend %HoverSuave;
+                    &:hover{
+                        background-color: #0000;
+                        color: $Branco;
+                        border: 2px solid $Branco;
+                        box-shadow: 0 6px 20px #672f69;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animaBgPerfil{
+    0%{
+        margin-bottom: 0px;
+    }
+    50%{
+        margin-bottom: 16px;
+    }
+    100%{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .SiteHome{
+        .SiteHome_Container{
+            width: 65%;
+            margin-left: 104px;
+            align-items: center;
+            .SiteHome_Container_Texto{
+                position: relative;
+                bottom: inherit;
+                .SiteHome_Container_FotoPerfil{
+                    max-width: calc(200px - 16px);
+                    img{
+                        animation: inherit;
+                    }
+                }
+                .Container_Texto_Nome{
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+        }
+        .Site_RedesSociais{
+            left: 0;
+            top: 0;
+            width: fit-content;
+            background-color: #fffffff2;
+            .Site_RedesSociais_Container{
+                flex-direction: column;
+                width: inherit;
+                max-width: inherit;
+                .RedesSociais_Container_Item{
+                    margin: 24px 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+$AzulMarinho1: #0d3e6b;
+$AzulMarinho2: #0e2a44;
+$Laranja: #e08d03;
+$Branco: #fff;
+$Preto: #000;
+$Roxo1: #643566;
+
+
+
+$GradienteLaranja: linear-gradient(45deg,#ff6d2d,#f78d01);
+
+%HoverSuave{
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
