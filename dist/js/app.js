@@ -1,6 +1,12 @@
 $(document).ready(function(){
     AOS.init();
 
+    $('.abrir-portfolio').click(function(){
+        $('.SiteHome_Container').addClass('__is-Disable');
+        $('.SiteHome_Portfolio').addClass('__is-Active');
+        
+    });
+
     //habilita o menu
     $('.PrimaryContent_Container_ButtonMenuMobile').click(function(){
         $('.Site_Header_Container_SecundaryContent').addClass('__is-active');
@@ -38,7 +44,7 @@ $(document).ready(function(){
         }
     }
 
-    $('.Site_SlideKim_Container').slick({
+    $('.SiteHome_Portfolio').slick({
         initialSlide: 0,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -48,7 +54,7 @@ $(document).ready(function(){
         arrows: true,
         infinite: true,
         swipe: true,
-        dots: true,
+        dots: false,
         prevArrow: '<div class="slick-arrow slick-prev"><i class="fas fa-chevron-left"></i></div>',
         nextArrow: '<div class="slick-arrow slick-next"><i class="fas fa-chevron-right"></i></div>',
         cssEase: 'linear',

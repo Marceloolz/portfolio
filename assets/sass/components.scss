@@ -8,6 +8,7 @@
         width: calc(100% - 48px);
         padding: 24px;
         box-shadow: 0px -13px 20px #00000014;
+        z-index: 99;
         .Site_RedesSociais_Container{
             width: 90%;
             max-width: 1200px;
@@ -54,4 +55,8 @@
     100%{
         transform: scale(1.0);
     }
+}
+
+.__is-Disable{
+    display: none!important;
 }
