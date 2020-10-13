@@ -1,6 +1,69 @@
 .slick-slide{
     img{
-        width: 100%!important;
+
+    }
+}
+
+.SitePortfolio{
+    .SiteHome_Portfolio{
+        z-index: 9;
+        .SiteHome_Portfolio_Item{
+            position: relative;
+            .Portfolio_Item_Descricao{
+                width: calc(100vw - 0px);
+                padding: 24px 0;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                background-image: linear-gradient(45deg,#904c98,#3F51B5);
+                .Item_Descricao_Container{  
+                    max-width: 1200px;
+                    width: 90%;
+                    text-align: center;
+                    .Descricao_Container_TituloProjeto{
+                        font-size: 22px;
+                        line-height: 26px;
+                        font-weight: 800;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    .Descricao_Container_DescricaoTexto{
+                        margin-top: 8px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 200;
+                        a{
+                            font-weight: 700;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                    .Descricao_Container_Button{
+                        text-decoration: none;
+                        button{
+                            outline: none;
+                            margin-top: 16px;
+                            cursor: pointer;
+                            border: none;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 800;
+                            background-color: #ffffff;
+                            color: #4151b5;
+                            padding: 16px 0px;
+                            border-radius: 100px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .Portfolio_Item_Image{
+                img{
+                    max-width: 100vw;
+                }
+            }
+        }
     }
 }
 
@@ -12,35 +75,6 @@
     background-repeat: no-repeat;
     background-position: 0 0px;
     min-height: 100vh;
-    .SiteHome_Portfolio{
-        width: 100%!important;
-        z-index: 9;
-        .SiteHome_Portfolio_Item{
-            width: 100%!important;
-            position: relative;
-            .Portfolio_Item_Descricao{
-                width: 100%;
-                padding: 24px 0px;
-                background-color: #70325b;
-                color: $Branco;
-                display: flex;
-                justify-content: center;
-                .Item_Descricao_Container{  
-                    max-width: 1200px;
-                    width: 90%;
-                    .Descricao_Container_TituloProjeto{
-                        
-                    }
-                }
-            }
-            .Portfolio_Item_Image{
-                width: 100%!important;
-                img{
-                    width: 100%!important;
-                }
-            }
-        }
-    }
     .SiteHome_Container{
             width: 90%;
             max-width: 1200px;
@@ -223,18 +257,6 @@
     }
 
     .SitePortfolio{
-        // .SiteHome_Portfolio{
-        //     width: 100%!important;
-        //     .SiteHome_Portfolio_Item{
-        //         width: 100%!important;
-        //         .Portfolio_Item_Image{
-        //             width: 100%!important;
-        //             img{
-        //                 width: 100%!important;
-        //             }
-        //         }
-        //     }
-        // }
         .Site_RedesSociais{
             .Site_RedesSociais_Container{
                 .RedesSociais_Container_Item{
