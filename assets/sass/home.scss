@@ -17,6 +17,22 @@
         z-index: 9;
         .SiteHome_Portfolio_Item{
             width: 100%!important;
+            position: relative;
+            .Portfolio_Item_Descricao{
+                width: 100%;
+                padding: 24px 0px;
+                background-color: #70325b;
+                color: $Branco;
+                display: flex;
+                justify-content: center;
+                .Item_Descricao_Container{  
+                    max-width: 1200px;
+                    width: 90%;
+                    .Descricao_Container_TituloProjeto{
+                        
+                    }
+                }
+            }
             .Portfolio_Item_Image{
                 width: 100%!important;
                 img{
@@ -90,6 +106,7 @@
 }
 
 .Site_ButtonVoltar{
+    display: none;
     a{
         outline: none;
 
