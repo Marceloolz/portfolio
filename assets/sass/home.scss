@@ -140,7 +140,6 @@
 }
 
 .Site_ButtonVoltar{
-    display: none;
     a{
         outline: none;
 
@@ -148,24 +147,31 @@
     button{
         i{
             font-size: 24px;
-            margin-right: 12px;
         }
-        outline: none;
+        outline: 0;
         position: fixed;
-        top: 8px;
-        left: 8px;
+        bottom: 120px;
+        left: 0px;
         z-index: 99;
-        background-color: #ffffff;
-        color: #70325b;
+        background-color: #1919199e;
+        color: #fff;
         border: none;
-        border-radius: 100px;
+        border-radius: 0px 100px 100px 0px;
         font-size: 12px;
-        padding: 12px 24px;
+        width: 56px;
+        height: 56px;
         text-transform: uppercase;
         font-weight: 700;
         cursor: pointer;
         box-shadow: 3px 4px 6px #70325b42;
-        @extend %HoverSuave;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         span{
             display: block;
         }
